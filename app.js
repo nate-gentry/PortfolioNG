@@ -2,8 +2,8 @@ new fullpage('#fullpage', {
     autoScrolling:true,
     navigation: true,
     licenseKey:null,
-    anchors: ['section1','section2','section3','section4',],
-    navigationTooltips: ['Intro','What I do', 'My story','Get in touch'],
+    anchors: ['section1','section2','section3','section3','section5',],
+    navigationTooltips: ['Intro','What I do','What I do2', 'My story','Get in touch'],
     showActiveTooltips : true,
     scrollingSpeed: 1500,
 
