@@ -1,20 +1,15 @@
 new fullpage('#fullpage', {
     autoScrolling:true,
     navigation: true,
-    licenseKey:null,
-    anchors: ['section1','section2','section3','section3','section5',],
-    navigationTooltips: ['Intro','What I do','What I do2', 'My story','Get in touch'],
+    licenseKey:'8075EB5D-B63C4F72-86DA3B4B-9531B95C',
+    anchors: ['section1','section2','section3','section4',],
+    navigationTooltips: ['Intro','Skills', 'My story','Get in touch'],
     showActiveTooltips : true,
     scrollingSpeed: 1500,
-
 
    onLeave:(origin, destination,direction)=>{
        const section =destination.item
        const title = section.querySelectorAll('h1')
-
-    //    const tl = new TimelineMax({ delay : 0.5})
-    //    console.log(tl.formTo())
-    //    tl.fromTo(title, 1.5, {y : "50", opacity : 0},{y : 0, opacity : 1} )
     if (destination.index === 1){
         const title = section.querySelectorAll('h1')
 
@@ -23,7 +18,6 @@ new fullpage('#fullpage', {
     
    }
 })
-
 
 const slider = document.querySelector('.slider')
 const trail = document.querySelector('.trail').querySelectorAll('div')
@@ -132,4 +126,3 @@ const touchSlide = (() => {
   }
   slider.addEventListener('touchend', mobile)
 })()
-
